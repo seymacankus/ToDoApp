@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+    /* --main-color: rgba(41, 128, 185, 1);
+    --main-color-light: rgba(41, 128, 185, .5);
+    --accent-color: rgba(243, 156, 18, 1);
+    --accent-color-light: rgba(243, 156, 18, .5);
+    --accent-color-dark: rgba(228,54,54,1); */
+    --main-color: #00425A;
+    --main-color-light: #1F8A70;
+    --second-color: #FC7300;
+    --second-color-light: #BFDB38;
+    --main-text-color: #FFFFFF;
+    --third-color: tomato;
+    --third-color-light: rgb(255, 123, 100);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, var(--main-color), var(--main-color-light));
+    background-repeat: no-repeat;
+    min-height: 97vh;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.header,
+.task-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    min-height: 20vh;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    color: var(--main-text-color);
+}
+
+.form-item {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+.input-task {
+    color: var(--main-color);
+}
+
+.btn-task-add {
+    color: var(--main-color);
+    cursor: pointer;
+    background-color: var(--second-color-light);
+}
+
+.btn-task-add:hover {
+    background-color: var(--second-color);
+    color: var(--main-text-color);
+}
+
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list {
+    list-style-type: none;
+    min-width: 60%;
+}
+
+.task-item {
+    background-color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+
+.task-description {
+    flex: 1;
+    padding: .5rem 1rem;
+}
+
+.btn-task {
+    border: none;
+    font-size: 1.3rem;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    color: var(--main-text-color);
+}
+
+.btn-task-completed {
+    background-color: var(--main-color);
+}
+
+.btn-task-completed:hover {
+    background-color: var(--main-color-light);
+}
+
+.btn-task-deleted {
+    background-color: var(--third-color);
+}
+
+.btn-task-deleted:hover {
+    background-color: var(--third-color-light);
+}
+
+.btn-task-edit {
+    background-color: var(--second-color)
+}
+
+.btn-task-edit:hover {
+    background-color: var(--second-color-light)
+}
+
+.task-completed {
+    text-decoration: line-through;
+    opacity: .7;
+}
+
+.fa-solid {
+    pointer-events: none;
+}
